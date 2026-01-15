@@ -281,3 +281,74 @@ h1 { font-size: 3rem; font-weight: 900; margin-bottom: 10px; color: #fff; }
 
 footer { text-align: center; padding: 40px; border-top: 1px solid #333; color: #555; margin-top: auto; }
 @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-10px); } 100% { transform: translateY(0px); } }
+
+/* site.css - Önceki kodların AYNISI + Yeni Badge Eklentisi */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+:root {
+    --yt-black: #0f0f0f;
+    --yt-dark-gray: #1e1e1e;
+    --yt-red: #ff0000;
+    --yt-white: #ffffff;
+    --yt-gray-text: #aaaaaa;
+    --glow: 0 0 20px rgba(255, 0, 0, 0.4);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background-color: var(--yt-black); color: var(--yt-white); font-family: 'Inter', sans-serif; line-height: 1.6; }
+
+/* Header */
+header { display: flex; justify-content: space-between; align-items: center; padding: 20px 10%; background-color: rgba(15, 15, 15, 0.95); position: sticky; top: 0; border-bottom: 1px solid #333; z-index: 100; backdrop-filter: blur(10px); }
+.logo { display: flex; align-items: center; gap: 10px; font-weight: 900; font-size: 1.5rem; letter-spacing: -1px; }
+.logo img { width: 32px; height: 32px; }
+nav a { color: var(--yt-gray-text); text-decoration: none; margin-left: 20px; font-weight: 500; transition: 0.3s; }
+nav a:hover, nav a.active { color: var(--yt-white); }
+
+/* Hero */
+.hero { text-align: center; padding: 80px 20px; background: radial-gradient(circle at center, #2a0000 0%, #0f0f0f 70%); }
+.hero-icon { width: 120px; margin-bottom: 20px; animation: float 3s ease-in-out infinite; }
+h1 { font-size: 3rem; font-weight: 900; margin-bottom: 10px; color: #fff; }
+.subtitle { font-size: 1.1rem; color: var(--yt-gray-text); margin-bottom: 30px; max-width: 600px; margin: 0 auto 30px auto; }
+.subtitle b { color: var(--yt-white); } /* 16x vurgusu için */
+
+.btn-primary { display: inline-block; background-color: var(--yt-red); color: white; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: 700; transition: 0.3s; box-shadow: var(--glow); }
+.btn-primary:hover { transform: scale(1.05); }
+
+/* Features */
+.features { display: flex; justify-content: center; gap: 30px; padding: 50px 10%; flex-wrap: wrap; }
+.feature-card { background: var(--yt-dark-gray); padding: 30px; border-radius: 16px; width: 300px; border: 1px solid #333; position: relative; overflow: hidden; }
+
+/* --- YENİ EKLENEN ROZET (BADGE) STİLİ --- */
+.badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--yt-red);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(255,0,0,0.5);
+}
+
+/* Feature Hover Efektleri */
+.feature-card:hover { border-color: var(--yt-red); transform: translateY(-5px); transition: 0.3s; }
+.feature-card h3 { margin-bottom: 10px; color: var(--yt-white); }
+.feature-card p { color: var(--yt-gray-text); font-size: 0.9rem; }
+
+/* Help Sayfası Stilleri (Korundu) */
+.container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+.section-title { text-align: center; margin: 50px auto 30px auto; }
+.section-title h1 { color: var(--yt-red); }
+.install-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 1000px; margin: 0 auto 50px auto; padding: 0 20px; }
+.step-card { background: var(--yt-dark-gray); padding: 25px; border-radius: 12px; border: 1px solid #333; }
+.step-number { background: var(--yt-red); width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-bottom: 15px; }
+.warning-box { background: rgba(255, 165, 0, 0.1); border: 1px solid orange; color: orange; padding: 10px; font-size: 0.85rem; border-radius: 8px; margin-top: 15px; }
+.code-box { background: #000; padding: 10px; border-radius: 6px; font-family: monospace; color: #0f0; margin-top: 10px; word-break: break-all; border: 1px solid #333; user-select: all; }
+.divider { border: 0; height: 1px; background: #333; margin: 50px 0; }
+.faq-container { max-width: 800px; margin: 0 auto 50px auto; padding: 0 20px; }
+.faq-item { background: var(--yt-dark-gray); margin-bottom: 15px; padding: 25px; border-radius: 12px; border-left: 4px solid var(--yt-red); }
+footer { text-align: center; padding: 40px; border-top: 1px solid #333; color: #555; margin-top: auto; }
+@keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-10px); } 100% { transform: translateY(0px); } }

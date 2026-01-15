@@ -23,25 +23,28 @@
     <section class="hero">
         <img src="icon.png" alt="ZenMode Logo" class="hero-icon">
         <h1>Sadece Videoya Odaklan.</h1>
-        <p class="subtitle">YouTube'daki dikkat dağıtıcı ek açıklamaları, bitiş kartlarını ve gereksiz butonları tek tıkla yok edin. %100 Ücretsiz.</p>
+        <p class="subtitle">YouTube'daki dikkat dağıtıcı <b>ek açıklamaları</b>, bitiş kartlarını, gereksiz butonları ve <b>reklamları</b> yok edin. %100 Ücretsiz.</p>
         
-        <a href="#" class="btn-primary" onclick="downloadAndRedirect(event)">ZenMode'u İndir (v1.0)</a>
+        <a href="#" class="btn-primary" onclick="downloadAndRedirect(event)">ZenMode'u İndir (v1.1)</a>
         
         <p style="margin-top: 15px; font-size: 0.8rem; color: #666;">.ZIP Dosyası • Windows & Mac Uyumlu</p>
     </section>
 
     <section class="features">
-        <div class="feature-card">
-            <h3>🚀 Ultra Hafif</h3>
-            <p>Tarayıcınızı yormaz. Sadece CSS kullanarak çalışır, arka planda gereksiz kod çalıştırmaz.</p>
+        <div class="feature-card highlight-card">
+            <span class="badge">YENİ</span>
+            <h3>⚡ Işık Hızında Geçiş</h3>
+            <p>Reklam çıktığı an video hızı 16 katına çıkar ve sesi kısılır. Reklamı saniyeler içinde "yok sayarak" geçersiniz.</p>
         </div>
+
         <div class="feature-card">
-            <h3>👁️ Temiz Görüntü</h3>
-            <p>Video sonunda ekranı kaplayan kutucuklar ve sağ üstteki 'i' butonları artık tarih oldu.</p>
+            <h3>🧘 Tam Odak Modu</h3>
+            <p>Video sonu önerileri, ekranı kaplayan kutucuklar ve sağ üstteki kartlar tamamen gizlenir.</p>
         </div>
+
         <div class="feature-card">
-            <h3>🛡️ Güvenli</h3>
-            <p>Verilerinizi toplamaz, izlemez. Tamamen açık kaynak ve şeffaf bir yapıya sahiptir.</p>
+            <h3>🛡️ Tespit Edilemez</h3>
+            <p>Klasik AdBlocker'lar gibi çalışmadığı için YouTube'un "Reklam engelleyiciyi kapatın" uyarısına takılmaz.</p>
         </div>
     </section>
 
@@ -52,7 +55,7 @@
     <script>
         function downloadAndRedirect(e) {
             e.preventDefault();
-            // 1. İndirmeyi Başlat
+            // 1. İndirmeyi Başlat (v1.1 olarak)
             window.location.href = 'ZenMode.zip';
             
             // 2. 500ms Sonra Yardım Sayfasına Yönlendir
