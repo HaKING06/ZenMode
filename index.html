@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenMode - YouTube Odak Modu</title>
+    <link rel="stylesheet" href="site.css">
+    <link rel="icon" type="image/png" href="icon.png">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="icon.png" alt="ZenMode Logo">
+            <span>ZenMode</span>
+        </div>
+        <nav>
+            <a href="index.html" class="active">Ana Sayfa</a>
+            <a href="help.html">Kurulum & SSS</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="icon.png" alt="ZenMode Logo" class="hero-icon">
+        <h1>Sadece Videoya Odaklan.</h1>
+        <p class="subtitle">YouTube'daki dikkat dağıtıcı ek açıklamaları, bitiş kartlarını ve gereksiz butonları tek tıkla yok edin. %100 Ücretsiz.</p>
+        
+        <a href="#" class="btn-primary" onclick="downloadAndRedirect(event)">ZenMode'u İndir (v1.0)</a>
+        
+        <p style="margin-top: 15px; font-size: 0.8rem; color: #666;">.ZIP Dosyası • Windows & Mac Uyumlu</p>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3>🚀 Ultra Hafif</h3>
+            <p>Tarayıcınızı yormaz. Sadece CSS kullanarak çalışır, arka planda gereksiz kod çalıştırmaz.</p>
+        </div>
+        <div class="feature-card">
+            <h3>👁️ Temiz Görüntü</h3>
+            <p>Video sonunda ekranı kaplayan kutucuklar ve sağ üstteki 'i' butonları artık tarih oldu.</p>
+        </div>
+        <div class="feature-card">
+            <h3>🛡️ Güvenli</h3>
+            <p>Verilerinizi toplamaz, izlemez. Tamamen açık kaynak ve şeffaf bir yapıya sahiptir.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 ZenMode Project. <span style="color:var(--yt-red); font-weight:bold;">halitguns06.dev</span></p>
+    </footer>
+
+    <script>
+        function downloadAndRedirect(e) {
+            e.preventDefault();
+            // 1. İndirmeyi Başlat
+            window.location.href = 'ZenMode.zip';
+            
+            // 2. 500ms Sonra Yardım Sayfasına Yönlendir
+            setTimeout(() => {
+                window.location.href = 'help.html';
+            }, 500);
+        }
+    </script>
+
+</body>
+</html>
