@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZenMode - YouTube Odak</title>
+    <title>ZenMode v1.7 - YouTube Deneyimini Yükselt</title>
     <link rel="stylesheet" href="site.css">
     <link rel="icon" type="image/png" href="icon.png">
 </head>
@@ -11,36 +11,38 @@
 
     <header>
         <div class="logo">
-            <img src="icon.png" alt="ZenMode">
+            <img src="icon.png" alt="ZenMode Logo">
             <span>ZenMode</span>
         </div>
         <nav>
             <a href="index.html" class="active">Ana Sayfa</a>
-            <a href="help.html">Kurulum</a>
+            <a href="help.html">Kurulum & SSS</a>
         </nav>
     </header>
 
     <section class="hero">
-        <img src="icon.png" alt="ZenMode Logo" class="hero-icon">
-        <h1>YouTube Deneyimini <br> Mükemmelleştirin.</h1>
-        <p class="subtitle">Reklamları hızlandırın, sinematik ışık ekleyin ve YouTube'un eksik parçası <b>Native Kamera Modu</b> ile tanışın.</p>
-        
-        <a href="#" class="btn-primary" onclick="downloadAndRedirect(event)">ZenMode'u İndir (v1.6)</a>
-        <p style="margin-top: 15px; font-size: 0.8rem; color: #666;">.ZIP Dosyası • Windows & Mac Uyumlu</p>
+        <div class="hero-content">
+            <img src="icon.png" alt="ZenMode Logo" class="hero-icon">
+            <h1>YouTube Deneyimini <br> Mükemmelleştirin.</h1>
+            <p class="subtitle">Reklamları 16x hızla geçin, <b>Native Kamera Modu</b> ile anında görüntü alın ve ses kayması olmadan izleyin.</p>
+
+            <a href="#" class="btn-primary" onclick="downloadZip(event)">ZenMode'u İndir (v1.7)</a>
+            <p class="meta-text">.ZIP Dosyası • Windows & Mac Uyumlu</p>
+        </div>
     </section>
 
     <div class="mockup-wrapper">
-        <p style="text-align: center; color: #555; margin-bottom: 10px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">Player Önizlemesi</p>
+        <p class="mockup-label">👇 Eklendiğinde Player Böyle Görünür 👇</p>
         <div class="mockup-container">
             <div class="mockup-screen">
-                <div class="play-icon">▶</div>
+                <div class="play-btn">▶</div>
             </div>
             <div class="mockup-controls">
-                <div class="fake-btn long"></div> <div class="right-controls">
-                    <div class="zen-fake-btn">
-                        <svg viewBox="0 0 24 24" width="24" height="24" fill="white"><path d="M4 4h3l2-2h6l2 2h3c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm0 2v12h16V6h-2.6L15.55 4.1 15.25 4H8.75l-.3.1L6.6 6H4zm8 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                <div class="fake-btn long"></div>
+                <div class="right-controls">
+                    <div class="zen-fake-btn" title="Ekran Görüntüsü (S)">
+                        <svg viewBox="0 0 24 24" fill="white" width="22"><path d="M4 4h3l2-2h6l2 2h3c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm0 2v12h16V6h-2.6L15.55 4.1 15.25 4H8.75l-.3.1L6.6 6H4zm8 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
                     </div>
-                    <div class="fake-btn"></div>
                     <div class="fake-btn"></div>
                     <div class="fake-btn"></div>
                 </div>
@@ -50,25 +52,25 @@
 
     <section class="features">
         <div class="feature-card">
-            <span class="badge new">YENİ</span>
+            <span class="badge highlight">YENİ</span>
             <h3>📸 Native Kamera</h3>
-            <p>YouTube arayüzüne %100 uyumlu ekran görüntüsü butonu. <b>"S"</b> tuşuyla anında, temiz isimli görsel alın.</p>
+            <p>YouTube arayüzüne tam uyumlu buton. <b>"S"</b> tuşuna basarak anında, temiz isimli ekran görüntüsü alın.</p>
         </div>
 
         <div class="feature-card">
             <h3>⚡ Reklam Hızlandırıcı</h3>
-            <p>Reklamları engellemez, 16x hızla sarar. YouTube'un yasaklarına takılmadan kesintisiz izlersiniz.</p>
+            <p>Reklamları engellemez, 16x hızla sarar. YouTube algoritmalarına takılmadan kesintisiz izlersiniz.</p>
         </div>
 
         <div class="feature-card">
             <span class="badge auto">OTO</span>
             <h3>♾️ Shorts Akışı</h3>
-            <p>Eller serbest! Shorts videosu bittiği an, ZenMode sizin yerinize bir sonrakine geçer.</p>
+            <p>Eller serbest modu! Shorts videosu bittiği an, ZenMode sizin yerinize bir sonrakine geçer.</p>
         </div>
 
         <div class="feature-card">
-            <h3>💡 Sinema Işığı</h3>
-            <p>Videonun renkleri player arkasına yumuşakça yayılır (Ambilight). Göz yormayan, premium bir deneyim.</p>
+            <h3>🎧 Audio Keeper</h3>
+            <p>Videoyu durdursanız bile kulaklığınızın uyku moduna geçmesini engeller. Ses kayması ve lag yaşanmaz.</p>
         </div>
     </section>
 
@@ -77,8 +79,9 @@
     </footer>
 
     <script>
-        function downloadAndRedirect(e) {
+        function downloadZip(e) {
             e.preventDefault();
+            // Dosya ismini buraya yaz
             window.location.href = 'ZenMode.zip';
             setTimeout(() => { window.location.href = 'help.html'; }, 500);
         }
