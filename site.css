@@ -168,7 +168,6 @@ footer {
     100% { filter: drop-shadow(0 0 0 rgba(255,255,255,0)); }
 }
 
-/* 2. ROZETLER (BADGES) */
 .badge {
     position: absolute; top: 15px; right: 15px;
     font-size: 0.7rem; font-weight: 800; padding: 4px 8px; border-radius: 4px;
